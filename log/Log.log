@@ -1,0 +1,96 @@
+[2021-02-25T00:55:11.736] [ERROR] Think - TypeError: userService.getService is not a constructor
+    at get (d:\example\nodejs\controller\user\get.js:15:28)
+    at Layer.handle [as handle_request] (d:\example\nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at next (d:\example\nodejs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (d:\example\nodejs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (d:\example\nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at d:\example\nodejs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (d:\example\nodejs\node_modules\express\lib\router\index.js:335:12)
+    at next (d:\example\nodejs\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (d:\example\nodejs\node_modules\express\lib\router\index.js:174:3)
+    at router (d:\example\nodejs\node_modules\express\lib\router\index.js:47:12)
+[2021-02-25T02:16:31.060] [ERROR] Think - SequelizeDatabaseError: Unknown column 'id' in 'field list'
+    at Query.formatError (d:\example\nodejs\node_modules\sequelize\lib\dialects\mysql\query.js:256:16)
+    at Query.run (d:\example\nodejs\node_modules\sequelize\lib\dialects\mysql\query.js:68:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async d:\example\nodejs\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-interface.js:952:12)
+    at async Function.findAll (d:\example\nodejs\node_modules\sequelize\lib\model.js:1753:21)
+    at async Function.findOne (d:\example\nodejs\node_modules\sequelize\lib\model.js:1917:12)
+    at async saveService.saveUser (d:\example\nodejs\service\userService.js:34:33)
+[2021-02-25T02:16:31.079] [ERROR] Think - Error: WHERE parameter "userId" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2262:13)
+    at d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2251:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2249:35)
+    at MySQLQueryGenerator.getWhereConditions (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2667:19)
+    at MySQLQueryGenerator.selectQuery (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1320:28)
+    at MySQLQueryInterface.select (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:27)
+    at Function.findAll (d:\example\nodejs\node_modules\sequelize\lib\model.js:1753:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Function.findOne (d:\example\nodejs\node_modules\sequelize\lib\model.js:1917:12)
+[2021-02-25T02:17:56.025] [ERROR] Think - SequelizeDatabaseError: Unknown column 'id' in 'field list'
+    at Query.formatError (d:\example\nodejs\node_modules\sequelize\lib\dialects\mysql\query.js:256:16)
+    at Query.run (d:\example\nodejs\node_modules\sequelize\lib\dialects\mysql\query.js:68:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async d:\example\nodejs\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-interface.js:952:12)
+    at async Function.findAll (d:\example\nodejs\node_modules\sequelize\lib\model.js:1753:21)
+    at async Function.findOne (d:\example\nodejs\node_modules\sequelize\lib\model.js:1917:12)
+    at async saveService.saveUser (d:\example\nodejs\service\userService.js:34:33)
+[2021-02-25T02:18:28.365] [ERROR] Think - Error: WHERE parameter "userId" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2262:13)
+    at d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2251:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2249:35)
+    at MySQLQueryGenerator.getWhereConditions (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2667:19)
+    at MySQLQueryGenerator.selectQuery (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1320:28)
+    at MySQLQueryInterface.select (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:27)
+    at Function.findAll (d:\example\nodejs\node_modules\sequelize\lib\model.js:1753:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Function.findOne (d:\example\nodejs\node_modules\sequelize\lib\model.js:1917:12)
+[2021-02-25T02:20:15.818] [ERROR] Think - SequelizeDatabaseError: Unknown column 'id' in 'field list'
+    at Query.formatError (d:\example\nodejs\node_modules\sequelize\lib\dialects\mysql\query.js:256:16)
+    at Query.run (d:\example\nodejs\node_modules\sequelize\lib\dialects\mysql\query.js:68:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async d:\example\nodejs\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-interface.js:952:12)
+    at async Function.findAll (d:\example\nodejs\node_modules\sequelize\lib\model.js:1753:21)
+    at async Function.findOne (d:\example\nodejs\node_modules\sequelize\lib\model.js:1917:12)
+    at async saveService.saveUser (d:\example\nodejs\service\userService.js:34:33)
+[2021-02-25T02:20:51.655] [ERROR] Think - SequelizeDatabaseError: Unknown column 'id' in 'field list'
+    at Query.formatError (d:\example\nodejs\node_modules\sequelize\lib\dialects\mysql\query.js:256:16)
+    at Query.run (d:\example\nodejs\node_modules\sequelize\lib\dialects\mysql\query.js:68:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async d:\example\nodejs\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-interface.js:952:12)
+    at async Function.findAll (d:\example\nodejs\node_modules\sequelize\lib\model.js:1753:21)
+    at async Function.findOne (d:\example\nodejs\node_modules\sequelize\lib\model.js:1917:12)
+    at async Object.createOrUpdate (d:\example\nodejs\service\dbManager.js:2:9)
+    at async saveService.saveUser (d:\example\nodejs\service\userService.js:48:32)
+[2021-02-25T02:24:16.756] [ERROR] Think - TypeError: Cannot read property 'userId' of null
+    at saveService.saveUser (d:\example\nodejs\service\userService.js:46:41)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-02-25T02:25:17.618] [ERROR] Think - TypeError: Cannot read property 'userId' of null
+    at saveService.saveUser (d:\example\nodejs\service\userService.js:46:41)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-02-25T02:26:19.686] [ERROR] Think - TypeError: Cannot read property 'userId' of null
+    at saveService.saveUser (d:\example\nodejs\service\userService.js:46:41)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-02-25T02:29:07.700] [ERROR] Think - TypeError: Cannot read property 'userId' of null
+    at saveService.saveUser (d:\example\nodejs\service\userService.js:42:41)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-02-25T02:30:27.340] [ERROR] Think - TypeError: Cannot read property 'userId' of null
+    at saveService.saveUser (d:\example\nodejs\service\userService.js:42:41)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-02-25T02:31:27.047] [ERROR] Think - Error: WHERE parameter "userId" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2262:13)
+    at d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2251:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2249:35)
+    at MySQLQueryGenerator.getWhereConditions (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2667:19)
+    at MySQLQueryGenerator.selectQuery (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1320:28)
+    at MySQLQueryInterface.select (d:\example\nodejs\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:27)
+    at Function.findAll (d:\example\nodejs\node_modules\sequelize\lib\model.js:1753:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Function.findOne (d:\example\nodejs\node_modules\sequelize\lib\model.js:1917:12)
