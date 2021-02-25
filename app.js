@@ -26,9 +26,6 @@ app.use(
     })
 );
 
-// SQL Injection
-app.use(sqlinjection);
-
 //** Configuration */
 app.use(bodyParser.json());
 app.set('views', path.join(__dirname, 'views'));

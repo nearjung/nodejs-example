@@ -9,6 +9,6 @@ var getController = require('../controller/user/get');
 
 /** route */
 user_route.get('/get', requiresAuth(), getController.get);
-user_route.post('/save', requiresAuth(), cors({ origin: true }), saveController.save);
+user_route.post('/save', cors({ origin: true }), saveController.save);
 
 module.exports = user_route;

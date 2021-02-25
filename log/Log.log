@@ -94,3 +94,14 @@
     at Function.findAll (d:\example\nodejs\node_modules\sequelize\lib\model.js:1753:47)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
     at async Function.findOne (d:\example\nodejs\node_modules\sequelize\lib\model.js:1917:12)
+[2021-02-25T11:51:20.328] [ERROR] Think - Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (d:\example\nodejs-example\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2262:13)
+    at d:\example\nodejs-example\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2251:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (d:\example\nodejs-example\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2249:35)
+    at MySQLQueryGenerator.getWhereConditions (d:\example\nodejs-example\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2667:19)
+    at MySQLQueryGenerator.selectQuery (d:\example\nodejs-example\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1320:28)
+    at MySQLQueryInterface.select (d:\example\nodejs-example\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:27)
+    at Function.findAll (d:\example\nodejs-example\node_modules\sequelize\lib\model.js:1753:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Function.findOne (d:\example\nodejs-example\node_modules\sequelize\lib\model.js:1917:12)

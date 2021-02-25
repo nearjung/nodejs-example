@@ -10,7 +10,17 @@ const userService = require('../../service/userService');
 
 const save = async (req, res, next) => {
     try {
-        var parameter = req.body.parameter;
+        var parameter = req.body;
+
+        if(!parameter.updateBy) { // กรณีไม่มีข้อมูลอัพเดทให้จะทำวันที่สร้าง หากมีแล้วให้อัพเดทแค่วันที่อัพเดท
+            parameter.createBy = 'System';
+            parameter.createDate = new Date();
+            parameter.updateBy = 'System';
+            parameter.updateDate = new Date();
+        } else {
+            parameter.updateBy = 'System';
+            parameter.updateDate = new Date();
+        }
 
         const saveService = new userService.saveService();
         const result = await saveService.saveUser(parameter);
